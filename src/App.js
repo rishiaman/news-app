@@ -5,6 +5,8 @@ import UserStore from './stores/userStore';
 import SubmitButton from './Components/SubmitButton';
 import LoginForm from './Components/LoginForm';
 import {BrowserRouter as Router} from 'react-router-dom';
+import Dashboard from './Components/Dashboard';
+
 class App extends Component {
 
   async componentDidMount(){
@@ -66,11 +68,12 @@ class App extends Component {
          </div>
       );
     }else{
-      if(UserStore.isLoggedIn){
+      if(true){
         return(
           <div className="App">
           <div className="container">
          Welcome {UserStore.userName}
+         <Dashboard/>
             <SubmitButton 
             text={'Logout'}
             disabled={false}

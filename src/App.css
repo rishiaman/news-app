@@ -53,5 +53,18 @@ border: solid 2px #1189de;
 border-radius: 4px;
 background: #fff;
 cursor: pointer;
+}
+
+.btnDash{
+  width: 30%;
+  min-width: 100px;
+  color: #565656;
+  padding: 10px;
+  font-size: 14px;
+  font-weight: bold;
+  border: solid 2px #1189de;
+  border-radius: 6px;
+  background: #fff;
+  cursor: pointer;
 
 }

@@ -4,6 +4,7 @@ import SubmitButton from './SubmitButton';
 import UserStore from '../stores/userStore';
 import {Link} from 'react-router-dom';
 
+
 class LoginForm extends Component{
 
   constructor(props){
@@ -63,7 +64,6 @@ render(){
     value={console.log()}
     onChange={(val)=>console.log(val)}
     />
-
     <SubmitButton
     text='Login'
     />
