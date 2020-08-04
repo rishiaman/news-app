@@ -16,7 +16,7 @@ class App extends Component {
         method:'post',
         headers:{
           'Accept':'application/json',
-          'content-type': 'application/json'
+          'content-Type': 'application/json'
         }
       });
       let result = res.json();
@@ -68,7 +68,7 @@ class App extends Component {
          </div>
       );
     }else{
-      if(true){
+      if(UserStore.isLoggedIn){
         return(
           <div className="App">
           <div className="container">
@@ -77,7 +77,7 @@ class App extends Component {
             <SubmitButton 
             text={'Logout'}
             disabled={false}
-            onClick={()=>{this.doLogout()}}
+            onClick={()=>this.doLogout()}
             />
            </div>
            </div>

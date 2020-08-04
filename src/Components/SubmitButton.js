@@ -7,7 +7,7 @@ const SubmitButton = (props)=> {
      <button 
      className='btn'
      disabled={props.disabled}
-     onClick={()=>props.onClick}
+     onClick={()=>props.onClick()}
          >
          {props.text}
          </button>
